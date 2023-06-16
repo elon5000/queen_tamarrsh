@@ -69,7 +69,7 @@ export default function Form({ setIsFormSubmitted }: Props) {
 
     return <form
         onSubmit={onHandleSubmit}
-        className="flex flex-1 flex-col items-center gap-4"
+        className="self-stretch flex flex-1 flex-col items-center gap-4"
     >
         <div className="form-input-container">
             {(!isNameValid && !isPristineMap.name) && <p className="invalid-input-warning">*Required</p>}

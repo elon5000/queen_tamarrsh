@@ -5,6 +5,9 @@ import MainNavBar from '../MainNavBar'
 // * Types
 import { SelectedPage } from '@/shared/types'
 
+// * SVG
+import  Logo  from '@/assets/logo.svg'
+
 type Props = {
     isTopOfPage: boolean
     isMainNavOpen: boolean
@@ -21,7 +24,8 @@ export default function MainHeader({ isTopOfPage, selectedPage, isMainNavOpen, s
 
     return <header className={headerStyles}>
         <div className="main-layout items-center flex-between gap-16 py-6">
-            <h1 title="Koolkat tattoos" className={h1LogoStyles}>Koolkat</h1>
+            {/* <h1 title="Koolkat tattoos" className={h1LogoStyles}>QT</h1> */}
+            <img alt="QT Logo" className='max-w-[70px]' src={Logo} />
             <MainNavBar
                 isTopOfPage={isTopOfPage}
                 selectedPage={selectedPage}

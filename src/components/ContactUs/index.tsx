@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 import { SelectedPage } from "@/shared/types"
 
 // * Images
-import Hulla from '@/assets/Hulla.png'
+import QR from '@/assets/QR.png'
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void
@@ -42,13 +42,13 @@ export default function ContactUs({ setSelectedPage }: Props) {
         }}
     >
         <div>
-            <h3 className="card-title mb-2"><span className="text-red-100">Schedule a consultation</span> to get inked</h3>
-            <p className="card-paragraph mb-2">
+            <h3 className="card-title mb-2 md:text-center"><span className="text-red-100">Schedule a consultation</span> to get inked</h3>
+            <p className="card-paragraph mb-2 md:text-center">
                 Leave your details to make your first step into a new tattoo adventure with Koolkat.
             </p>
         </div>
         <motion.div
-            className="flex gap-12 flex-col md:flex-row"
+            className="flex gap-12 flex-col items-center justify-center md:flex-row"
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.5 }}
@@ -60,9 +60,7 @@ export default function ContactUs({ setSelectedPage }: Props) {
         >
             {!isFormSubmitted && <Form setIsFormSubmitted={setIsFormSubmitted} />}
             {isFormSubmitted && <h3 className="text-center py-6">Request has been sent successfully ✅</h3>}
-            <div className="flex justify-center md:justify-end flex-1">
-                <img src={Hulla} className="max-w-[200px] object-contain" alt="Contact us graphics" />
-            </div>
+                <img src={QR} className="object-cover max-w-sm" alt="Contact us graphics" />
         </motion.div>
     </motion.section>
 }
