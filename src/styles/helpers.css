@@ -1,0 +1,44 @@
+.main-layout {
+  @apply w-5/6 mx-auto;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.header-title {
+  @apply uppercase font-montserrat font-extrabold text-4xl mb-4;
+}
+
+.circle-icon {
+  @apply w-14 rounded-full p-3 mb-4 text-gray-20 bg-gray-500-trans border-2 border-solid border-gray-100;
+}
+
+.card {
+  @apply main-layout min-h-full py-6;
+}
+
+.card-title {
+  @apply font-extrabold uppercase text-3xl cursor-default;
+}
+
+.card-paragraph {
+  @apply font-bold mb-8 text-lg;
+}
+
+.logo {
+  cursor: default;
+  letter-spacing: 1px;
+}
+
+.form-input {
+  @apply py-4 px-6 w-full rounded-lg bg-primary-500 text-gray-20 placeholder:text-gray-20 placeholder:uppercase focus:bg-gray-20 focus:text-primary-500 focus:placeholder:text-primary-500  text-xl;
+}
+
+.form-input-container {
+  @apply flex flex-col w-full items-center max-w-[520px];
+}
+
+.invalid-input-warning {
+  @apply text-red-100 self-start;
+}
