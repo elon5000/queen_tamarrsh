@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 import { SelectedPage } from "@/shared/types"
 
 // * Images
-import QR from '@/assets/QR.png'
+import QR from '@/assets/qr.png'
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void
